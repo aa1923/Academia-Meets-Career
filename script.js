@@ -4,10 +4,17 @@ document.getElementById('timetable-form')?.addEventListener('submit', function(e
     
     const courseName = event.target.elements[0].value;
     const hours = event.target.elements[1].value;
-    
+    const opportunityName = event.target.elements[2].value;
+    const duration = event.target.elements[3].value;
+
     const opportunityList = document.getElementById('opportunity-list');
+    
     const newOpportunity = document.createElement('div');
-    newOpportunity.innerText = `Course: ${courseName}, Hours: ${hours}`;
+    newOpportunity.innerHTML = `
+        <p><strong>Course:</strong> ${courseName}, <strong>Hours:</strong> ${hours}</p>
+        <p><strong>Opportunity:</strong> ${opportunityName}, <strong>Duration:</strong> ${duration} hours</p>
+    `;
+    
     opportunityList.appendChild(newOpportunity);
 });
 
