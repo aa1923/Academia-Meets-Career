@@ -1,54 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Career Prediction System</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Academia Meets Career</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Student Career Prediction System</h1>
-    <p>Assess your interests and capabilities to find your ideal career path.</p>
-  </header>
-  
-  <main>
-    <section class="description">
-      <h2>About the System</h2>
-      <p>
-        This system helps students identify their interests and capabilities to determine the best-suited career path in the computer science domain. The system is also beneficial for recruiters to identify the ideal job role for candidates based on their performance and evaluations.
-      </p>
-    </section>
+    <header>
+        <h1>Welcome to Academia Meets Career</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="timetable.html">Timetable Generator</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
 
-    <section class="form-section">
-      <h2>Student Assessment Form</h2>
-      <form id="careerForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <main>
+        <section id="home-description">
+            <p>Discover a unified approach to maximize your academic and career development.</p>
+        </section>
+    </main>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <footer>
+        <p>© 2024 Academia Meets Career. All rights reserved.</p>
+    </footer>
 
-        <label for="interests">Interests:</label>
-        <textarea id="interests" name="interests" rows="4" required></textarea>
-
-        <label for="skills">Skills:</label>
-        <textarea id="skills" name="skills" rows="4" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <section id="result" class="hidden">
-      <h2>Predicted Career Path</h2>
-      <p id="careerOutput"></p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 Student Career Prediction System. All rights reserved.</p>
-  </footer>
-
-  <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
